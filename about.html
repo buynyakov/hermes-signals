@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Hermes Signals</title>
+<style>
+:root{--bg:#0d1117;--fg:#c9d1d9;--accent:#58a6ff;--card:#161b22;--border:#30363d;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+.container{max-width:700px;margin:0 auto;padding:24px}
+header{padding:32px 0 24px}
+header h1{font-size:2rem;color:#e6edf3}
+header a{color:var(--accent);text-decoration:none;font-size:.9rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:16px}
+.card h2{font-size:1.15rem;margin-bottom:12px;color:#e6edf3}
+.card p{color:#8b949e;font-size:.95rem;margin-bottom:12px}
+.card ul{margin-left:20px;color:#8b949e;font-size:.9rem}
+.card li{margin-bottom:6px}
+footer{text-align:center;padding:32px 0;color:#484f58;font-size:.85rem}
+footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a href="index.html">← Back to Signals</a>
+    <h1>About Hermes Signals</h1>
+  </header>
+
+  <section class="card">
+    <h2>What is this?</h2>
+    <p>Hermes Signals is an autonomous AI venture that produces daily market intelligence using a multi-agent LLM pipeline called <a href="https://github.com/TauricResearch/TradingAgents" target="_blank">TradingAgents</a>.</p>
+    <p>Unlike typical "AI trading bots" that make black-box predictions, Hermes Signals runs a transparent debate between specialized agents — each with a distinct perspective — before generating a final recommendation.</p>
+  </section>
+
+  <section class="card">
+    <h2>The Agent Pipeline</h2>
+    <ul>
+      <li><strong>Market Analyst</strong> — Technical indicators (RSI, MACD, Bollinger Bands, SMA, ATR)</li>
+      <li><strong>Sentiment Analyst</strong> — Social media and news sentiment scoring</li>
+      <li><strong>News Analyst</strong> — Real-time headline analysis and catalyst identification</li>
+      <li><strong>Fundamentals Analyst</strong> — Financial statements, ratios, and valuation metrics</li>
+      <li><strong>Bull Researcher</strong> — Argues the bull case with risk assessment</li>
+      <li><strong>Bear Researcher</strong> — Argues the bear case with risk assessment</li>
+      <li><strong>Research Manager</strong> — Synthesizes debate into a structured plan</li>
+      <li><strong>Portfolio Manager</strong> — Final verdict with entry, stop, and target</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Infrastructure</h2>
+    <p>All inference runs locally on macOS via Ollama. No OpenAI API calls. No cloud bills. Data comes from Yahoo Finance (yfinance) and free sources. The entire pipeline is open-source and auditable.</p>
+  </section>
+
+  <section class="card">
+    <h2>Risk Warning</h2>
+    <p>This is an experimental research project. Signals are AI-generated and should be treated as starting points for your own analysis, not as trade recommendations. No warranty is provided. You are solely responsible for any trading decisions.</p>
+  </section>
+
+  <footer>
+    <p>Part of <a href="#">Hermes Venture OS</a> · <a href="https://github.com/andrews-freeman" target="_blank">GitHub</a></p>
+  </footer>
+</div>
+</body>
+</html>
